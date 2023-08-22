@@ -1,0 +1,42 @@
+@use '_variaveis';
+
+.hero{
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url("https://via.placeholder.com/300x500");
+    text-align: center;
+
+    &__content{
+        max-width: 640px;
+
+        .title--small{
+            margin-bottom: 20px;
+        }
+    
+        p {
+            margin-bottom: 20px;
+        }
+    
+        &__combos{
+            display: flex;
+            justify-content: space-between;
+
+            &__combo{
+                width: clac(50% - 12px);
+
+                .button{
+                    display: block;
+                    width: 100%;
+                    height: 60px;
+                    font-size: 18px;
+                    background-color: $corBotao;
+                    border-radius: 4px;
+                    margin-top: 2vw;
+                    margin-bottom: 8px;
+                    
+
+                }
+            }
+        }
+    }
+}
