@@ -1,5 +1,6 @@
-@use '_variaveis';
+@use 'variaveis';
 @use 'hero';
+@use 'shows';
 
 *{
     margin: 0;
@@ -9,7 +10,7 @@
 
 
 body{
-    background-color: _variaveis.$corFundo ;
+    background-color: variaveis.$corFundo ;
 }
 
 @mixin text($fontSize: 16px){
@@ -19,7 +20,7 @@ body{
 }
 @mixin title($fontSize: 40px){
     @include text($fontSize);
-    color: _variaveis.$corTex2;
+    color: variaveis.$corTex2;
 }
 
 .text--big{
@@ -45,6 +46,6 @@ body{
 
 .link-text{
     @include text(18px);
-    color: _variaveis.$corTex2;
-    text-decoration: underline
-;}
+    color: variaveis.$corTex2;
+    text-decoration: underline;
+}

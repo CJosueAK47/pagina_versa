@@ -1,4 +1,4 @@
-@use '_variaveis';
+@use 'variaveis';
 
 .hero{
     padding: 5.6vw;
@@ -9,7 +9,7 @@
     &__content{
         max-width: 640px;
 
-        .title--small{
+        title--small{
             margin-bottom: 20px;
         }
     
@@ -22,18 +22,19 @@
             justify-content: space-between;
 
             &__combo{
-                width: clac(50% - 12px);
+                width: calc(50% - 12px);
+                display: block;
+                list-style: none;
 
-                .button{
+                button{
                     display: block;
                     width: 100%;
                     height: 60px;
                     font-size: 18px;
-                    background-color: $corBotao;
+                    background-color: variaveis.$corBotao;
                     border-radius: 4px;
                     margin-top: 2vw;
                     margin-bottom: 8px;
-                    
 
                 }
             }
