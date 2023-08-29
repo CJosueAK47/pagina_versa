@@ -3,13 +3,15 @@
 .hero{
     padding: 5.6vw;
     min-height: 80vh;
-    background-image: url("https://via.placeholder.com/300x500");
+    background-image: url(../images/ruiva_oculos.png);
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &__content{
         max-width: 640px;
 
-        title--small{
+        &title--small{
             margin-bottom: 20px;
         }
     
@@ -25,17 +27,28 @@
                 width: calc(50% - 12px);
                 display: block;
                 list-style: none;
+            }
+        }
+    }
 
-                button{
-                    display: block;
-                    width: 100%;
-                    height: 60px;
-                    font-size: 18px;
-                    background-color: variaveis.$corBotao;
-                    border-radius: 4px;
-                    margin-top: 2vw;
-                    margin-bottom: 8px;
+       
+    @media screen and (max-width: 768px) {
+        padding: 10vw; // Aumentar o preenchimento para telas menores
 
+        &__content {
+            max-width: 100%; // Permitir que o conteúdo ocupe a largura total
+
+            h1 {
+                font-size: 2rem; // Ajustar o tamanho da fonte para telas menores
+            }
+
+            h3 {
+                font-size: 1.2rem; // Ajustar o tamanho da fonte para telas menores
+            }
+
+            &__combos {
+                &__combo {
+                    width: 100%; // Fazer os combos ocuparem toda a largura em telas menores
                 }
             }
         }

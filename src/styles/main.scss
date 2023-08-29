@@ -1,6 +1,11 @@
 @use 'variaveis';
 @use 'hero';
 @use 'shows';
+@use 'plans';
+@use 'available-devices';
+@use 'faq';
+@use 'footer';
+
 
 *{
     margin: 0;
@@ -16,8 +21,9 @@ body{
 @mixin text($fontSize: 16px){
     font-size: $fontSize;
     line-height: $fontSize + 10px;
-    $corTex1: silver;
+    color: variaveis.$corTex2;
 }
+
 @mixin title($fontSize: 40px){
     @include text($fontSize);
     color: variaveis.$corTex2;
@@ -26,20 +32,23 @@ body{
 .text--big{
     @include text(18px);
 }
+
 .text{
     @include text;
 }
 
 .text--small{
-    @include text(18px);
+    @include text(12px);
 }
 
 .title--big{
     @include title(44px)
 }
+
 .title{
     @include title(40px)
 }
+
 .title--small{
     @include title(28px)
 }
@@ -48,4 +57,58 @@ body{
     @include text(18px);
     color: variaveis.$corTex2;
     text-decoration: underline;
+}
+
+.button{
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    background-color: variaveis.$corBotao;
+    border-radius: 4px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
+    border: none;
+    color: variaveis.$corTex2;
+}
+
+
+.image-text-section{
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+
+    img{
+        max-width: 100%;
+    }
+
+    &__text_container{
+        padding: 0 2vw;
+
+        h2{
+            margin-bottom: 24px;
+        }
+    }
+
+    &--image-full-width{
+        display: block;
+        position: relative;
+
+        img{
+            width: 100%;
+        }
+
+        &__text_container{
+            position: absolute;
+            top: 5.6vw;
+            left: 50%;
+            height: 100%;
+            width: calc(50% - 5.6vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 }
