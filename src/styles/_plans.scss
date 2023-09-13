@@ -1,7 +1,7 @@
 .plans{
     padding: 5.6vw;
 
-    h2{
+    h2, h3{
         text-align: center;
     }
 
@@ -11,9 +11,9 @@
         list-style: none;
         margin-top: 50px;
         
-        &__item{
+        &__item, &__itemspace{
             text-align: center;
-            padding: 64px 44px 44px;
+            padding: 0px 44px 44px;
             max-width: 380px;
             width: 100%;
 
@@ -25,12 +25,67 @@
             }
             strong{
                 display: block;
-                margin-top: 24px;
+                padding: 24px 0px 24px 0px;
+            }
+
+            &__title{
+                color: white;
+            }
+
+            &__beneficios{
+                display: flex;
+                list-style: none;
+
+                i{
+                    padding-right: 18px;
+                    color: rgb(188, 66, 52);
+                    font-size: 25px;
+                }
+            }
+
+            &__olhos{
+                width: 250px;
+                height: 90px;
             }
         }
     }
 
     p{
-        text-align: center;
+        text-align: start;
+    }
+
+    @media screen and (max-width: 768px){
+        h2{
+            text-align: center;
+            font-size: 2rem;;
+        }
+        &__list{
+            display: block;
+            align-items: center;
+            padding: 5vw 5vw;
+            &__item{
+                padding: 0px 0px 80px;
+
+                .aviso{
+                    padding-top: 15px;
+                }
+
+                strong{
+                    padding: 24px 0px 24px 0px;
+                }
+            
+            }
+
+            &__itemspace{
+                padding: 0px 0px 0px;
+                .aviso{
+                    padding-top: 15px;
+                }
+
+                strong{
+                    padding-bottom: 24px;
+                }
+            }
+        }
     }
 }

@@ -1,13 +1,15 @@
 .faq{
-    padding: 5.6vw;
+    padding:  5.6vw;
+    justify-content: center;
 
     h2{
         text-align: center;
         margin-bottom: 24px;
     }
-
+    
     &__questions{
         &__item{
+            
             background-color: #13151d;
             margin-bottom: 16px;
 
@@ -36,6 +38,7 @@
                 overflow: hidden;
                 padding: 0 24px;
                 transition: height, .5s ease;
+                text-align: justify;
             }
 
             &--is-open{

@@ -3,19 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="dist/css/main.css">
-    <title>Projeto 04</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <title>Óticas Versa</title>
 </head>
 <body>
+    <header class="cabe">
+        <div class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+            <div class="container">
+                <img class="cabecalho__logo" src="/to_versa/src/images/logo_teste2.png" style="border-radius: 50%;" alt="">
+                <h1 class="navbar-brand m-0">
+                    V E R S A
+                </h1>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                    <span class="navbar-toggler-icon icon_toggler"></span>
+                </button>
+                <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                    <ul class="nav nav-pills d-block d-md-flex">
+                        <li class="nav-item fw-bold">
+                            <a data-nav-link="01" href="#equipe" class="nav-link active">
+                                <i class="bi bi-person-heart"></i>
+                                Equipe
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a data-nav-link="02" href="#promocao" class="nav-link">
+                                <i class="bi bi-award"></i>
+                                Seu CR Vale +
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a  data-nav-link="03" href="#lentes" class="nav-link">
+                                <i class="bi bi-sunglasses"></i>
+                                Lentes
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a  data-nav-link="04" href="#historia" class="nav-link">
+                                <i class="bi bi-book"></i>
+                                História
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a  data-nav-link="05" href="#diferencial" class="nav-link">
+                                <i class="bi bi-heart"></i>
+                                Diferencial
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a  data-nav-link="06" href="#perguntas" class="nav-link">
+                                <i class="bi bi-patch-question"></i>
+                                Perguntas Frenquentes
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
             <h1 class="hero__content__branding title--big">
-                Rato Estúdios
+                NOS
             </h1>
-            <h3 class="title--small">
-                Mais conteudo que o Disney+ (confia)
+            <h1 class="hero__content__branding title--big">
+                CONHEÇA
+            </h1>
+            <h3 class="hero__content__branding__h3 text--big">
+                <strong>ÓTICAS VERSA - Conforto, Saúde & Estilo</strong>
             </h3>
-            <p>
+          
+            <!--<p>
                 <a href="" class="link-text">Veja a sinopse!</a>
                 <br>
                 <span class="text">
@@ -33,129 +97,283 @@
                     <button class="button">Assine Agora</button>
                     <span>R$ 590,00</span>
                 </li>
-            </ul>
+            </ul>-->
         </div>
     </section>
-    <section class="shows">
+
+    <section id="equipe" class="equipe">
+        <h1 class="title">Equipe</h1>
+        <div class="container">
+            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div data-bs-interval="4500" class="carousel-item equipe__item equipe__item active">
+                        <img class="d-block w-80 h-200" src="/to_versa/src/images/steffane_new.jpg" alt="">
+                        <div class="carousel-caption equipe__item__descricao">
+                            <h2>Steffane Abraão</h2>
+                            <p>
+                                Especialista em medições optométricas, gerente há 3 anos
+                            </p>
+                        </div>
+                    </div>
+
+                    <div data-bs-interval="4500" class="carousel-item equipe__item">
+                        <img class="d-block w-80 h-200" src="/to_versa/src/images/josue_new.jpg" alt="">
+                        <div class="carousel-caption equipe__item__descricao">
+                            <h2>C. Josué Dias</h2>
+                            <p>
+                                Programador, MarketingMan, Gestor de Tráfego e universitário
+                            </p>
+                        </div>
+                    </div>
+
+                    <div data-bs-interval="4500" class="carousel-item equipe__item">
+                        <img class="d-block w-80 h-200" src="/to_versa/src/images/henrique_new.jpg" alt="">
+                        <div class="carousel-caption equipe__item__descricao">
+                            <h2>Carlos Henrique</h2>
+                            <p>
+                               Optometrista, CEO,  pastor há 20 anos e pai de quatro filhos
+                            </p>
+                        </div>
+                    </div>
+
+                    <div data-bs-interval="4500" class="carousel-item equipe__item">
+                        <img class="d-block w-80 h-200" src="/to_versa/src/images/adriana_new.jpg" alt="">
+                        <div class="carousel-caption equipe__item__descricao">
+                            <h2>Adriana Campos</h2>
+                            <p>
+                                Co-Fundadora da empresa, pedagoga há 10 anos e mãe
+                            </p>
+                        </div>
+                    </div>
+    
+                    <button class="carousel-control-prev" data-bs-target="#carousel-exemplo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-target="#carousel-exemplo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lentes" class="shows">
         <nav class="shows__tabs">
             <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
-                Em Breve
+                Blue Control
             </button>
             <button data-tab-button="populares" class="shows__tabs__button">
-                Mais Populares
+                Foto Sensível
             </button>
             <button data-tab-button="historico" class="shows__tabs__button">
-                Historico
+                Solar
             </button>
         </nav>
         <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
             <li class="shows__list__item">
-                <img src="https://via.placeholder.com/220x190" alt="">
+                <img src="/to_versa/src/images/oculos_f_azul.jpg" alt="">
             </li>
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/220x190" alt="">
-            </li>
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/220x190" alt="">
-            </li>
-
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/220x190" alt="">
-            </li>
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/220x190" alt="">
-            </li>
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/220x190" alt="">
-            </li>
-            
+            <h3 class="title-small shows__list__item__title">Para Alta Produtividade</h3>
+            <p class="text">
+                Conhecida por melhorar a qualidade do <strong class="shows__list__enfase">sono </strong>, <strong class="shows__list__enfase">produtividade</strong> no <strong class="shows__list__enfase">trabalho</strong> e <strong class="shows__list__enfase">vida acadêmica</strong>, as lentes Blue Control bloqueiam a radiação nosciva aos olhos, proporcionando conforto visual. 
+            </p>
         </ul>
         <ul data-tab-id="populares" class="shows__list">
             <li class="shows__list__item">
-                <img src="https://via.placeholder.com/200x190" alt="">
+                <img src="/to_versa/src/images/oculos_foto.jpg" alt="">
             </li>
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/200x190" alt="">
-            </li>
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/200x190" alt="">
-            </li>
-
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/200x190" alt="">
-            </li>
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/200x190" alt="">
-            </li>
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/200x190" alt="">
-            </li>
-            
+            <h3 class="title-small shows__list__item__title">Sua Rotina Mais Confortável</h3>
+            <p class="text">
+                Adaptando-se ao ambiente, as lentes <strong class="shows__list__enfase">Foto Sensíveis</strong> bloqueiam raios UV, previnem <strong class="shows__list__enfase">doenças oculares</strong> e proporcionam bem estar dentro e fora de casa!
+            </p>
         </ul>
         <ul data-tab-id="historico" class="shows__list">
             <li class="shows__list__item">
-                <img src="https://via.placeholder.com/210x190" alt="">
+                <img src="/to_versa/src/images/oculos_solar.jpg" alt="">
             </li>
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/210x190" alt="">
-            </li>
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/210x190" alt="">
-            </li>
-
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/210x190" alt="">
-            </li>
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/210x190" alt="">
-            </li>
-            <li class="shows__list__item">
-                <img src="https://via.placeholder.com/210x190" alt="">
-            </li>
-            
+            <h3 class="title-small shows__list__item__title">Viva Com Toda Intensidade</h3>
+            <p class="text">
+                Momentos intensos pedem proteção intensa! Nas horas de lazer e alta exposição ao ar livre, as lentes solares oferecem <strong class="shows__list__enfase">cuidado extra aos olhos</strong>,  evitando danos oculares e prevenindo cansaço visual.
+            </p>
         </ul>
     </section>
-    <section class="plans">
-        <h2 class="title--big">Escolha seu Plano</h2>
+
+    <section class="chamada">
+        <button id="agendar_visita" class="button">Conferir Armações</button>
+    </section>
+
+    <section id="promocao" class="plans">
+        <h2 class="title--big">Seu CR Vale +</h2>
+        <h3 class="title-small plans__list__item__title"><strong class="shows__list__enfase">UNIVERSITÁRIOS</strong> Tem Descontos Exclusivos!</h3>
+        <p class="text">
+            Use seu Coeficiênte de Rendimento (CR) para obter descontos exclusivos para universitários.
+            Agora seu rendimento acadêmico vale SAÚDE, CONFORTE E ESTILO !
+        </p>
         <ul class="plans__list">
             <li class="plans__list__item">
-                <img src="https://via.placeholder.com/250x90" alt="logo-plano">
-                <strong class="title--small">R$ 180,00</strong>
-                <p class="text--big">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur iusto dignissimos dolore maiores 
-                </p>
-                <button class="button">Assine Agora</button>
+                
+                <img class="plans__list__item__olhos" src="/to_versa/src/images/olhos01.png" alt="logo-plano">
+                <strong class="title--small"> > 8.7</strong>
+                
+                <ul>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-heart-pulse-fill"></i>
+                        <p class="text">
+                            CONSULTA oftalmologica Gratuita
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-eyeglasses"></i>
+                        <p class="text">
+                            ARMAÇÃO Gratuita
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-piggy-bank-fill"></i>
+                        <p class="text">
+                            10% de DESCONTO
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-piggy-bank"></i>
+                        <p class="text">
+                            15% de DESCONTO para um familiar
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-gift-fill"></i>
+
+                        <p class="text">
+                            Presentinho VERSA
+                        </p>
+                    </li>
+                </ul>
+                <button id="buttonCRalto" class="button">Sou Eu</button>
             </li>
             <li class="plans__list__item">
-                <img src="https://via.placeholder.com/250x90" alt="logo-plano">
-                <strong class="title--small">R$ 300,00</strong>
-                <p class="text--big">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur iusto dignissimos dolore maiores 
-                </p>
-                <button class="button">Assine Agora</button>
+                <img class="plans__list__item__olhos" src="/to_versa/src/images/olhos02.png" alt="logo-plano">
+                <strong class="title--small">7.7 < __ < 8.7</strong>
+
+                <ul>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-heart-pulse-fill"></i>
+                        <p class="text">
+                            CONSULTA oftalmologica Gratuita
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-eyeglasses"></i>
+                        <p class="text">
+                            ARMAÇÃO Gratuita
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-piggy-bank-fill"></i>
+                        <p class="text">
+                            5% de DESCONTO
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-piggy-bank"></i>
+                        <p class="text">
+                            10% de DESCONTO para um familiar
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-gift-fill"></i>
+
+                        <p class="text">
+                            Presentinho VERSA
+                        </p>
+                    </li>
+                </ul>
+                <button id="buttonCRmedio" class="button">Sou Eu</button>
             </li>
-            <li class="plans__list__item">
-                <img src="https://via.placeholder.com/250x90" alt="logo-plano">
-                <strong class="title--small">R$ 410,00</strong>
-                <p class="text--big">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur iusto dignissimos dolore maiores 
+            <li class="plans__list__itemspace">
+                <img class="plans__list__item__olhos" src="/to_versa/src/images/olhos03.png" alt="logo-plano">
+                <strong class="title--small"> 6.7 < __ < 7.7</strong>
+               
+                <ul>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-heart-pulse-fill"></i>
+                        <p class="text">
+                            CONSULTA oftalmologica Gratuita
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-piggy-bank-fill"></i>
+                        <p class="text">
+                            5% de DESCONTO
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-piggy-bank"></i>
+                        <p class="text">
+                            10% de DESCONTO para um familiar
+                        </p>
+                    </li>
+                    
+                </ul>
+                <button id="buttonCRbaixo" class="button">Sou Eu</button>
+                <p class="text--small aviso">
+                    * o cr deve corresponder ao semestre vigente, sendo apresentado junto à matrícula da universidade.
                 </p>
-                <button class="button">Assine Agora</button>
             </li>
         </ul>
-        <p class="text--small">O preço pode variar assinando por outras plataformas</p>
-
     </section>
-    <section class="image-text-section">
-        <img src="https://via.placeholder.com/500x400" alt="imagem">
+    <section id="historia" class="image-text-section">
+        <!--<img src="https://via.placeholder.com/500x400" alt="imagem">-->
         <div class="image-text-section__text_container">
-            <h2 class="title">Assista do seu jeito</h2>
+            <h2 class="title">História</h2>
             <p class="text--big">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat perspiciatis quibusdam adipisci similique ipsum doloribus atque numquam soluta? Porro saepe ab ratione ea magni eveniet excepturi quidem eos voluptas sunt.
+                A empresa começa com a iniciativa filantrópica Projeto Social Pró-Visão, fundada pelo pastor e empresário Carlos Henrique Campos, primeiramente limitada apenas à capital São Luís do Maranhão. 
+                <br><br>Com o advento da Pandemia de Covid-19 e o lockdown em todo o país, as ações do projeto social se voltaram para as comunidades mais carentes, expandindo-se e passando à alcançar todos os municípios visinhos. 
+                <br><br>Hoje, a iniciativa continua patrocinada e gerida pela Óticas Versa, alcançando todo o Estado do Maranhão, levando consigo uma equipe de profissionais de saúde ainda mais equipada.
             </p>
         </div>
     </section>
-    <section class="image-text-section image-text-section--image-full-width">
+
+    <section id="diferencial" class="image-text-section">
+        <!--<img src="https://via.placeholder.com/500x400" alt="imagem">-->
+        <div class="image-text-section__text_container">
+            <h2 class="title">Diferencial</h2>
+            <ul class="image-text-section__text_container__list">
+                <li class="image-text-section__text_container__list__item">
+                    <i class="bi bi-clipboard-pulse"></i>
+                    <p class="text">
+                        Tradição em lentes de qualidade
+                    </p>
+                </li>
+                <li class="image-text-section__text_container__list__item">
+                    <i class="bi bi-person-badge"></i>
+                    <p class="text">
+                        Acompanhamento durante o período de adaptação
+                    </p>
+                </li>
+                <li class="image-text-section__text_container__list__item">
+                    <i class="bi bi-sunglasses"></i>
+                    <p class="text">
+                        Armações das melhores marcas
+                    </p>
+                </li>
+                <li class="image-text-section__text_container__list__item">
+                    <i class="bi bi-person-workspace"></i>
+                    <p class="text">
+                        Exclusividade para universitários
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--<section class="image-text-section image-text-section--image-full-width">
         <img src="https://via.placeholder.com/400x200" alt="imagem">
         <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
             <h2 class="title">Filmes e Séries</h2>
@@ -204,62 +422,79 @@
                 </ul>
             </li>
         </ul>
-    </section>
-    <section class="faq">
+    </section>-->
+    <section id="perguntas" class="faq">
         <h2 class="title">Perguntas Frequentes</h2>
         <ul class="faq__questions">
             <li class="faq__questions__item " data-faq-question>
-                <div class="faq__questions__item__question">
-                    Pergunta?
+                <div class="faq__questions__item__question text">
+                    Quais os critérios para participar da iniciativa SEU CR VALE + ?
                 </div>
-                <div class="faq__questions__item__answer text--big">
-                    Resposta!
+                <div class="faq__questions__item__answer text">
+                    Você deve possuir vínculo à universidade no semestre vigente, possuir um CR igual ou maior que 6.7 e estar adiquirindo seu óculos!
                 </div>
             </li>
             <li class="faq__questions__item"  data-faq-question>
-                <div class="faq__questions__item__question">
-                    Pergunta?
+                <div class="faq__questions__item__question text">
+                    Por onde agendo minha consulta de vistas?
                 </div>
-                <div class="faq__questions__item__answer text--big">
-                    Resposta!
+                <div class="faq__questions__item__answer text">
+                    Clique no botão abaixo e agende sua visita, ou vá até a seção SEU CR VALE+ e aproveite descontos exclusivos para universitários!
                 </div>
             </li>
             <li class="faq__questions__item" data-faq-question>
-                <div class="faq__questions__item__question">
-                    Pergunta?
+                <div class="faq__questions__item__question text">
+                    Quanto Tempo até meu óculos ficar pronto?
                 </div>
-                <div class="faq__questions__item__answer text--big">
-                    Resposta!
+                <div class="faq__questions__item__answer text">
+                    Seus óculos novos ficam prontos em até 1 dia útil. Em casos excepcionais, ficam prontos em 4 dias úteis!
+                </div>
+            </li>
+            <li class="faq__questions__item" data-faq-question>
+                <div class="faq__questions__item__question text">
+                    Qual a validade do meu óculos?
+                </div>
+                <div class="faq__questions__item__answer text">
+                    Seus óculos possuem uma validade de até 1 ano. Com passar do tempo, as especificidades da sua visão alteram, e com ela, o modelo ideal de lentes para seus olhos!              
                 </div>
             </li>
         </ul>
     </section>
+
+    <section class="chamada">
+        <button class="button" id="agendar_visita2">Agendar Visita</button>
+    </section>
+
     <footer class="footer">
         <div class="footer__container">
-            <img src="https:///via.placeholder.com/100x50" alt="">
+            <img class="footer__container__logo" src="/to_versa/src/images/logo_teste2.png" alt="">
             <ul class="footer__container__links">
                 <li class="footer__links__item">
-                    <a href="#" class="text--small">Termos de Uso</a>
+                    <i class="bi bi-instagram footer__links__item__icon"></i>
+                    <a href="https://www.instagram.com/oticasversa/" class="text--small">Instagram</a>
                 </li>
                 <li class="footer__links__item">
-                    <a href="#" class="text--small">Idiomas</a>
+                    <i class="bi bi-whatsapp footer__links__item__icon"></i>
+                    <a href="https://api.whatsapp.com/send?phone=5598982571856&text=Olá,%20VERSA!" target="_blank"class="text--small">WhatsApp</a>
                 </li>
                 <li class="footer__links__item">
-                    <a href="#" class="text--small">Suporte</a>
-                </li>
-                <li class="footer__links__item">
-                    <a href="#" class="text--small">Sugestões</a>
+                    <i class="bi bi-facebook footer__links__item__icon"></i>
+                    <a href="https://www.facebook.com/oticasversa/" class="text--small">Facebook</a>
                 </li>
             </ul>
             <p class="text--small">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corrupti obcaecati maxime  nam!
+                Para conhecer nossa loja, agende uma visita pelas pricipais plataformas: Instagram, WhatsApp e Facebook.
             </p>
             <p class="text--small">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus saepe quas sit tempora omnis quae eius, porro
+                & Todos os direitos reservados - Óticas Versa.
+            </p>
+            <p class="text--small">
+                CNPJ - 381.867.690.001.19
             </p>
         </div>
     </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./src/main.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
 @use 'available-devices';
 @use 'faq';
 @use 'footer';
+@use 'equipe';
 
 
 *{
@@ -15,7 +16,7 @@
 
 
 body{
-    background-color: variaveis.$corFundo ;
+    background-image: url(https://images.pexels.com/photos/9665192/pexels-photo-9665192.jpeg?auto=compress&cs=tinysrgb&w=600);
 }
 
 @mixin text($fontSize: 16px){
@@ -61,7 +62,7 @@ body{
 
 .button{
     display: block;
-    width: 100%;
+    width: 50%;
     height: 60px;
     font-size: 18px;
     background-color: variaveis.$corBotao;
@@ -70,18 +71,16 @@ body{
     margin-bottom: 8px;
     border: none;
     color: variaveis.$corTex2;
+    margin: 0 auto;
 }
 
 
 .image-text-section{
     padding: 5.6vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
 
-
-    img{
-        max-width: 100%;
+    p{
+        text-align: justify;
     }
 
     &__text_container{
@@ -89,7 +88,26 @@ body{
 
         h2{
             margin-bottom: 24px;
+            text-align: center;
         }
+
+        &__list{
+            &__item{
+                display: flex;
+                padding-bottom: 10px;
+
+                i{
+                    color: rgb(188, 66, 52);
+                    padding-right: 18px;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    /*
+    img{
+        max-width: 100%;
     }
 
     &--image-full-width{
@@ -110,5 +128,121 @@ body{
             flex-direction: column;
             justify-content: center;
         }
+        
+    }*/
+}
+
+.chamada{
+    padding: 20px;
+}
+
+.navbar{
+    background-color: transparent;
+}
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-armacoes .nav-link.active:hover{
+    color: rgb(188, 66, 52);
+}
+.navbar-brand{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#cabecalho .nav .nav-link i{
+    padding-right: 12px;
+}
+#cabecalho .nav .nav-link.active{
+    background-color: #001bb2;
+    color: white;
+}
+
+.cabecalho__logo{
+    height: 50px;
+}
+.navbar-toggler-icon{
+    color: #fff;
+}
+
+.equipe{
+    &__item{
+        position: relative;
+        &::before{
+            position: absolute;
+            top: 67%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            content: '';
+            opacity: 0.5;
+        }
+        &__descricao{
+            text-shadow: 2px 2px 4px rgb(0, 0, 0.9);
+            color: #fff;
+            font-weight: 500;
+        }
+        img{
+            margin: 0 auto;//cuida para que a imagem fique centralizada
+            max-width: 100%; /* A imagem não ficará maior do que o seu contêiner */
+            height: auto; /* A altura se ajustará automaticamente para manter a proporção */
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        &__item{
+            position: relative;
+            &::before{
+                position: absolute;
+                top: 80%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                content: '';
+                opacity: 0.5;
+            }
+            &__descricao{
+                text-shadow: 2px 2px 4px rgb(0, 0, 0.9);
+                color: #fff;
+                font-weight: 500;
+            }
+            img{
+                margin: 0 auto;//cuida para que a imagem fique centralizada
+                max-width: 100%; /* A imagem não ficará maior do que o seu contêiner */
+                height: 690px; /* A altura se ajustará automaticamente para manter a proporção */
+            }
+        }
+    }
+}
+
+.plans{
+    .button{
+        display: block;
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+        background-color: variaveis.$corBotao;
+        border-radius: 4px;
+        margin-top: 2vw;
+        margin-bottom: 8px;
+        border: none;
+        color: variaveis.$corTex2;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .button{
+        display: block;
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+        background-color: variaveis.$corBotao;
+        border-radius: 4px;
+        margin-top: 2vw;
+        margin-bottom: 8px;
+        border: none;
+        color: variaveis.$corTex2;
     }
 }

@@ -1,0 +1,15 @@
+.equipe{
+    padding-top: 5.6vw;
+
+    h1{
+        text-align: center;
+        font-size: 2rem;;
+    }
+
+    @media screen and (max-width: 768px){
+        h1{
+            text-align: center;
+            font-size: 2rem;;
+        }
+    }
+}
