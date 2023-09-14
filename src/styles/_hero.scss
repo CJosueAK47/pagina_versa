@@ -3,7 +3,7 @@
 .hero{
     padding-top: 5.6vw;
     min-height: 90vh;
-    background-image: url(/to_versa/src/images/ruiva_oculos.png);
+    background-image: url(/src/images/ruiva_oculos.png);
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,7 +42,7 @@
 
        
     @media screen and (max-width: 768px) {
-        background-image: url(/to_versa/src/images/ruiva_oculos.png);
+        background-image: url(/src/images/ruiva_oculos.png);
 
         padding-top: 70vw; // Aumentar o preenchimento para telas menores
 
