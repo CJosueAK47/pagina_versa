@@ -102,7 +102,7 @@ buttonAgendar2.addEventListener("click", function() {
 buttonCRalto.addEventListener("click", function() {
 
     var numeroTelefone = "5598982571856";
-    var mensagem = "Olá, VERSA!\n Meu CR é > 8.7 \n Gostaria de agendar minha visita!";
+    var mensagem = "Olá, VERSA!\n Meu CR está acima de 8.7 \n Gostaria de agendar minha visita!";
     
     // Cria o link do WhatsApp com número e mensagem pré-programada
     var linkWhatsApp = "https://api.whatsapp.com/send?phone=" + numeroTelefone + "&text=" + encodeURIComponent(mensagem);
@@ -114,7 +114,7 @@ buttonCRalto.addEventListener("click", function() {
 buttonCRmedio.addEventListener("click", function() {
 
     var numeroTelefone = "5598982571856";
-    var mensagem = "Olá, VERSA!\n Meu CR é > 7.7 e < 8.7 \n Gostaria de agendar minha visita!";
+    var mensagem = "Olá, VERSA!\n Meu CR está entre 7.7 & 8.7 \n Gostaria de agendar minha visita!";
     
     // Cria o link do WhatsApp com número e mensagem pré-programada
     var linkWhatsApp = "https://api.whatsapp.com/send?phone=" + numeroTelefone + "&text=" + encodeURIComponent(mensagem);
@@ -126,7 +126,7 @@ buttonCRmedio.addEventListener("click", function() {
 buttonCRbaixo.addEventListener("click", function() {
 
     var numeroTelefone = "5598982571856";
-    var mensagem = "Olá, VERSA!\n Meu CR é > 6.7 e < 7.7 \n Gostaria de agendar minha visita!";
+    var mensagem = "Olá, VERSA!\n Meu CR está entre 6.7 & 7.7 \n Gostaria de agendar minha visita!";
     
     // Cria o link do WhatsApp com número e mensagem pré-programada
     var linkWhatsApp = "https://api.whatsapp.com/send?phone=" + numeroTelefone + "&text=" + encodeURIComponent(mensagem);
