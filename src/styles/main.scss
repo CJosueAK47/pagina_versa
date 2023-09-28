@@ -75,21 +75,30 @@ body{
 }
 
 
-.image-text-section{
+
+.diferencial{
+    background-image: url(/src/images/noel.png);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     padding: 5.6vw;
     align-items: center;
 
     p{
         text-align: justify;
+        text-shadow: 2px 2px 4px rgb(0, 0, 1);
+    }
+
+    h2{
+        margin-bottom: 24px;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgb(0, 0, 0.9);
     }
 
     &__text_container{
+        background-color: rgba(0, 0, 0, 0.627);
         padding: 0 2vw;
-
-        h2{
-            margin-bottom: 24px;
-            text-align: center;
-        }
 
         &__list{
             &__item{
@@ -100,8 +109,16 @@ body{
                     color: rgb(188, 66, 52);
                     padding-right: 18px;
                     font-size: 25px;
+                    text-shadow: 2px 2px 4px rgb(0, 0, 0.9);
                 }
             }
+        }
+    }
+
+    @media screen and (min-width: 1024px){
+        padding: 5.6vw;
+        &__text_container{
+            padding-left: 30vw;
         }
     }
 
@@ -130,6 +147,31 @@ body{
         }
         
     }*/
+}
+
+.history{
+    padding: 5.6vw;
+    align-items: center;
+
+    p{
+        text-align: justify;
+    }
+
+    &__text_container{
+        padding: 0 2vw;
+
+        h2{
+            margin-bottom: 24px;
+            text-align: center;
+        }
+    }
+
+    @media screen and (min-width: 1024px){
+        padding: 5.6vw;
+        &__text_container{
+            padding: 0 25vw;
+        }
+    }
 }
 
 .chamada{
@@ -163,6 +205,7 @@ body{
 .navbar-toggler-icon{
     color: #fff;
 }
+
 
 .equipe{
     &__item{

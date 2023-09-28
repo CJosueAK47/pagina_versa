@@ -22,7 +22,7 @@
                     V E R S A
                 </h1>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
-                    <span class="navbar-toggler-icon icon_toggler"></span>
+                    <i class="bi bi-list" style="color: white; font-size: 40px; padding: 0px; "></i>
                 </button>
                 <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                     <ul class="nav nav-pills d-block d-md-flex">
@@ -211,8 +211,8 @@
 
     <section id="promocao" class="plans">
         <h2 class="title--big">Seu CR Vale +</h2>
-        <h3 class="title-small plans__list__item__title"><strong class="shows__list__enfase">UNIVERSITÁRIOS</strong> Tem Descontos Exclusivos!</h3>
-        <p class="text">
+        <h3 class="title-small plans__list__item__title"><strong class="shows__list__enfase">UNIVERSITÁRIOS</strong> Tem<br> Descontos Exclusivos!</h3>
+        <p class="text description_plan">
             Use seu Coeficiênte de Rendimento (CR) para obter descontos exclusivos para universitários.
             Agora seu rendimento acadêmico vale SAÚDE, CONFORTE E ESTILO !
         </p>
@@ -220,7 +220,7 @@
             <li class="plans__list__item">
                 
                 <img class="plans__list__item__olhos" src="/src/images/olhos01.png" alt="logo-plano">
-                <strong class="title--small"> > 8.7</strong>
+                <strong class="title--small"> Acima de 8.7</strong>
                 
                 <ul>
                     <li class="plans__list__item__beneficios">
@@ -259,7 +259,7 @@
             </li>
             <li class="plans__list__item">
                 <img class="plans__list__item__olhos" src="/src/images/olhos02.png" alt="logo-plano">
-                <strong class="title--small">7.7 < __ < 8.7</strong>
+                <strong class="title--small">Entre 7.7 & 8.7</strong>
 
                 <ul>
                     <li class="plans__list__item__beneficios">
@@ -298,7 +298,7 @@
             </li>
             <li class="plans__list__itemspace">
                 <img class="plans__list__item__olhos" src="/src/images/olhos03.png" alt="logo-plano">
-                <strong class="title--small"> 6.7 < __ < 7.7</strong>
+                <strong class="title--small">Entre 6.7 & 7.7</strong>
                
                 <ul>
                     <li class="plans__list__item__beneficios">
@@ -321,49 +321,51 @@
                     </li>
                     
                 </ul>
-                <button id="buttonCRbaixo" class="button">Sou Eu</button>
+                <div class="buttonspace">
+                    <button id="buttonCRbaixo" class="button">Sou Eu</button>
+                </div>
                 <p class="text--small aviso">
                     * o cr deve corresponder ao semestre vigente, sendo apresentado junto à matrícula da universidade.
                 </p>
             </li>
         </ul>
     </section>
-    <section id="historia" class="image-text-section">
+    <section id="historia" class="history">
         <!--<img src="https://via.placeholder.com/500x400" alt="imagem">-->
-        <div class="image-text-section__text_container">
+        <div class="history__text_container">
             <h2 class="title">História</h2>
             <p class="text--big">
                 A empresa começa com a iniciativa filantrópica Projeto Social Pró-Visão, fundada pelo pastor e empresário Carlos Henrique Campos, primeiramente limitada apenas à capital São Luís do Maranhão. 
-                <br><br>Com o advento da Pandemia de Covid-19 e o lockdown em todo o país, as ações do projeto social se voltaram para as comunidades mais carentes, expandindo-se e passando à alcançar todos os municípios visinhos. 
+                <br><br>Com o advento da Pandemia de Covid-19 e o lockdown em todo o país, as ações do projeto social se voltaram para as comunidades mais carentes, expandindo-se e passando à alcançar todos os municípios vizinhos. 
                 <br><br>Hoje, a iniciativa continua patrocinada e gerida pela Óticas Versa, alcançando todo o Estado do Maranhão, levando consigo uma equipe de profissionais de saúde ainda mais equipada.
             </p>
         </div>
     </section>
 
-    <section id="diferencial" class="image-text-section">
+    <section id="diferencial" class="diferencial">
         <!--<img src="https://via.placeholder.com/500x400" alt="imagem">-->
-        <div class="image-text-section__text_container">
-            <h2 class="title">Diferencial</h2>
-            <ul class="image-text-section__text_container__list">
-                <li class="image-text-section__text_container__list__item">
+        <h2 class="title">Diferencial</h2>
+        <div class="diferencial__text_container">
+            <ul class="diferencial__text_container__list">
+                <li class="diferencial__text_container__list__item">
                     <i class="bi bi-clipboard-pulse"></i>
                     <p class="text">
                         Tradição em lentes de qualidade
                     </p>
                 </li>
-                <li class="image-text-section__text_container__list__item">
+                <li class="diferencial__text_container__list__item">
                     <i class="bi bi-person-badge"></i>
                     <p class="text">
                         Acompanhamento durante o período de adaptação
                     </p>
                 </li>
-                <li class="image-text-section__text_container__list__item">
+                <li class="diferencial__text_container__list__item">
                     <i class="bi bi-sunglasses"></i>
                     <p class="text">
                         Armações das melhores marcas
                     </p>
                 </li>
-                <li class="image-text-section__text_container__list__item">
+                <li class="diferencial__text_container__list__item">
                     <i class="bi bi-person-workspace"></i>
                     <p class="text">
                         Exclusividade para universitários
@@ -455,7 +457,7 @@
                     Qual a validade do meu óculos?
                 </div>
                 <div class="faq__questions__item__answer text">
-                    Seus óculos possuem uma validade de até 1 ano. Com passar do tempo, as especificidades da sua visão alteram, e com ela, o modelo ideal de lentes para seus olhos!              
+                    Seus óculos possuem uma validade de até 1 ano. Com passar do tempo, a dioptria da sua visão alteram, e com ela, o tipo ideal de lentes para seus olhos!              
                 </div>
             </li>
         </ul>

@@ -17,7 +17,9 @@
         }
 
         &__item{
+            margin: 0 auto;
             list-style: none;
+            align-items: center;
             img{
                 max-width: 100%;
                 border-radius: 4px;
@@ -28,7 +30,7 @@
 
             &__title{
                 color: rgb(188, 66, 52);
-                max-width: 300px;
+                max-width: 500px;
                 margin: 0 auto;
                 text-align: justify;
                 padding-bottom: 20px;
@@ -40,7 +42,7 @@
         }
 
         p{
-            max-width: 300px;
+            max-width: 500px;
             margin: 0 auto;
             text-align: justify;
         }

@@ -1,5 +1,5 @@
 .plans{
-    padding: 5.6vw;
+    padding: 5.6vw 5.6vw 0 5.6vw;
 
     h2, h3{
         text-align: center;
@@ -47,11 +47,19 @@
                 width: 250px;
                 height: 90px;
             }
+
+            .buttonspace{
+                margin-top: 83px;
+            }
+
+            p{
+                text-align: start;
+            }
         }
     }
 
-    p{
-        text-align: start;
+    .description_plan{
+        text-align: center;
     }
 
     @media screen and (max-width: 768px){
@@ -85,6 +93,10 @@
                 strong{
                     padding-bottom: 24px;
                 }
+
+                .buttonspace{
+                    margin-top: 0px;
+                }    
             }
         }
     }
