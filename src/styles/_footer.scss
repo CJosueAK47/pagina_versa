@@ -19,6 +19,23 @@
             border-radius: 50%;
             margin-bottom: 20px;
         }
+
+        &__universidades{
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            padding: 0;
+            list-style: none;
+
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+
+            &__item{
+                margin: 0 15px;
+                img{
+                    height: 35px;
+                }
+            }
+        }
     }
 
     &__links{

@@ -27,13 +27,7 @@
                 <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                     <ul class="nav nav-pills d-block d-md-flex">
                         <li class="nav-item fw-bold">
-                            <a data-nav-link="01" href="#equipe" class="nav-link active">
-                                <i class="bi bi-person-heart"></i>
-                                Equipe
-                            </a>
-                        </li>
-                        <li class="nav-item fw-bold">
-                            <a data-nav-link="02" href="#promocao" class="nav-link">
+                            <a data-nav-link="02" href="#promocao" class="nav-link active">
                                 <i class="bi bi-award"></i>
                                 Seu CR Vale +
                             </a>
@@ -48,6 +42,12 @@
                             <a  data-nav-link="04" href="#historia" class="nav-link">
                                 <i class="bi bi-book"></i>
                                 História
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a data-nav-link="01" href="#equipe" class="nav-link">
+                                <i class="bi bi-person-heart"></i>
+                                Equipe
                             </a>
                         </li>
                         <li class="nav-item fw-bold">
@@ -101,8 +101,187 @@
         </div>
     </section>
 
+    <section id="promocao" class="plans">
+        <h2 class="title--big">Seu CR Vale +</h2>
+        <h3 class="title-small plans__list__item__title"><strong class="shows__list__enfase">UNIVERSITÁRIOS</strong> Tem <br> Descontos Exclusivos!</h3>
+        <p class="text description_plan">
+            Use seu Coeficiênte de Rendimento (CR) para obter descontos exclusivos para universitários.
+            Agora seu rendimento acadêmico vale SAÚDE, CONFORTE E ESTILO !
+        </p>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                
+                <img class="plans__list__item__olhos" src="/src/images/olhos-garota.png" alt="logo-plano">
+                <strong class="title--small"> Acima de 8.7</strong>
+                
+                <ul>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-heart-pulse-fill"></i>
+                        <p class="text">
+                            CONSULTA oftalmologica Gratuita
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-eyeglasses"></i>
+                        <p class="text">
+                            ARMAÇÃO Gratuita
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-piggy-bank-fill"></i>
+                        <p class="text">
+                            10% de DESCONTO
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-piggy-bank"></i>
+                        <p class="text">
+                            15% de DESCONTO para um familiar
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-gift-fill"></i>
+
+                        <p class="text">
+                            Presentinho VERSA
+                        </p>
+                    </li>
+                </ul>
+                <button id="buttonCRalto" class="button">Sou Eu</button>
+            </li>
+            <li class="plans__list__item">
+                <img class="plans__list__item__olhos" src="/src/images/olhos-man.png" alt="logo-plano">
+                <strong class="title--small">Entre 7.7 & 8.7</strong>
+
+                <ul>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-heart-pulse-fill"></i>
+                        <p class="text">
+                            CONSULTA oftalmologica Gratuita
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-eyeglasses"></i>
+                        <p class="text">
+                            ARMAÇÃO Gratuita
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-piggy-bank-fill"></i>
+                        <p class="text">
+                            5% de DESCONTO
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-piggy-bank"></i>
+                        <p class="text">
+                            10% de DESCONTO para um familiar
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-gift-fill"></i>
+
+                        <p class="text">
+                            Presentinho VERSA
+                        </p>
+                    </li>
+                </ul>
+                <button id="buttonCRmedio" class="button">Sou Eu</button>
+            </li>
+            <li class="plans__list__itemspace">
+                <img class="plans__list__item__olhos" src="/src/images/olhos=garota2.png" alt="logo-plano">
+                <strong class="title--small">Entre 6.7 & 7.7</strong>
+               
+                <ul>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-heart-pulse-fill"></i>
+                        <p class="text">
+                            CONSULTA oftalmologica Gratuita
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-piggy-bank-fill"></i>
+                        <p class="text">
+                            5% de DESCONTO
+                        </p>
+                    </li>
+                    <li class="plans__list__item__beneficios">
+                        <i class="bi bi-piggy-bank"></i>
+                        <p class="text">
+                            10% de DESCONTO para um familiar
+                        </p>
+                    </li>
+                    
+                </ul>
+                <div class="buttonspace">
+                    <button id="buttonCRbaixo" class="button">Sou Eu</button>
+                </div>
+                <p class="text--small aviso">
+                    * o cr deve corresponder ao semestre vigente, sendo apresentado junto à matrícula da universidade.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="lentes" class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
+                Blue Control
+            </button>
+            <button data-tab-button="populares" class="shows__tabs__button">
+                Foto Sensível
+            </button>
+            <button data-tab-button="historico" class="shows__tabs__button">
+                Solar
+            </button>
+        </nav>
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="/src/images/oculos_f_azul.jpg" alt="">
+            </li>
+            <h3 class="title-small shows__list__item__title">Para Alta Produtividade</h3>
+            <p class="text">
+                Conhecida por melhorar a qualidade do <strong class="shows__list__enfase">sono </strong>, <strong class="shows__list__enfase">produtividade</strong> no <strong class="shows__list__enfase">trabalho</strong> e <strong class="shows__list__enfase">vida acadêmica</strong>, as lentes Blue Control bloqueiam a radiação nosciva aos olhos, proporcionando conforto visual. 
+            </p>
+        </ul>
+        <ul data-tab-id="populares" class="shows__list">
+            <li class="shows__list__item">
+                <img src="/src/images/oculos_foto.jpg" alt="">
+            </li>
+            <h3 class="title-small shows__list__item__title">Sua Rotina Mais Confortável</h3>
+            <p class="text">
+                Adaptando-se ao ambiente, as lentes <strong class="shows__list__enfase">Foto Sensíveis</strong> bloqueiam raios UV, previnem <strong class="shows__list__enfase">doenças oculares</strong> e proporcionam bem estar dentro e fora de casa!
+            </p>
+        </ul>
+        <ul data-tab-id="historico" class="shows__list">
+            <li class="shows__list__item">
+                <img src="/src/images/oculos_solar.jpg" alt="">
+            </li>
+            <h3 class="title-small shows__list__item__title">Viva Com Toda Intensidade</h3>
+            <p class="text">
+                Momentos intensos pedem proteção intensa! Nas horas de lazer e alta exposição ao ar livre, as lentes solares oferecem <strong class="shows__list__enfase">cuidado extra aos olhos</strong>,  evitando danos oculares e prevenindo cansaço visual.
+            </p>
+        </ul>
+    </section>
+
+    <section class="chamada">
+        <button id="agendar_visita" class="button">Conferir Armações</button>
+    </section>
+
+    <section id="historia" class="history">
+        <!--<img src="https://via.placeholder.com/500x400" alt="imagem">-->
+        <div class="history__text_container">
+            <h2 class="title">História</h2>
+            <p class="text--big">
+                A empresa começa com a iniciativa filantrópica Projeto Social Pró-Visão, fundada pelo pastor e empresário Carlos Henrique Campos, primeiramente limitada apenas à capital São Luís do Maranhão. 
+                <br><br>Com o advento da Pandemia de Covid-19 e o lockdown em todo o país, as ações do projeto social se voltaram para as comunidades mais carentes, expandindo-se e passando à alcançar todos os municípios vizinhos. 
+                <br><br>Hoje, a iniciativa continua patrocinada e gerida pela Óticas Versa, alcançando todo o Estado do Maranhão, levando consigo uma equipe de profissionais de saúde ainda mais equipada.
+            </p>
+        </div>
+    </section>
+
     <section id="equipe" class="equipe">
-        <h1 class="title">Equipe</h1>
+        <h2 class="title">Equipe</h2>
         <div class="container">
             <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -161,184 +340,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="lentes" class="shows">
-        <nav class="shows__tabs">
-            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
-                Blue Control
-            </button>
-            <button data-tab-button="populares" class="shows__tabs__button">
-                Foto Sensível
-            </button>
-            <button data-tab-button="historico" class="shows__tabs__button">
-                Solar
-            </button>
-        </nav>
-        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
-            <li class="shows__list__item">
-                <img src="/src/images/oculos_f_azul.jpg" alt="">
-            </li>
-            <h3 class="title-small shows__list__item__title">Para Alta Produtividade</h3>
-            <p class="text">
-                Conhecida por melhorar a qualidade do <strong class="shows__list__enfase">sono </strong>, <strong class="shows__list__enfase">produtividade</strong> no <strong class="shows__list__enfase">trabalho</strong> e <strong class="shows__list__enfase">vida acadêmica</strong>, as lentes Blue Control bloqueiam a radiação nosciva aos olhos, proporcionando conforto visual. 
-            </p>
-        </ul>
-        <ul data-tab-id="populares" class="shows__list">
-            <li class="shows__list__item">
-                <img src="/src/images/oculos_foto.jpg" alt="">
-            </li>
-            <h3 class="title-small shows__list__item__title">Sua Rotina Mais Confortável</h3>
-            <p class="text">
-                Adaptando-se ao ambiente, as lentes <strong class="shows__list__enfase">Foto Sensíveis</strong> bloqueiam raios UV, previnem <strong class="shows__list__enfase">doenças oculares</strong> e proporcionam bem estar dentro e fora de casa!
-            </p>
-        </ul>
-        <ul data-tab-id="historico" class="shows__list">
-            <li class="shows__list__item">
-                <img src="/src/images/oculos_solar.jpg" alt="">
-            </li>
-            <h3 class="title-small shows__list__item__title">Viva Com Toda Intensidade</h3>
-            <p class="text">
-                Momentos intensos pedem proteção intensa! Nas horas de lazer e alta exposição ao ar livre, as lentes solares oferecem <strong class="shows__list__enfase">cuidado extra aos olhos</strong>,  evitando danos oculares e prevenindo cansaço visual.
-            </p>
-        </ul>
-    </section>
-
-    <section class="chamada">
-        <button id="agendar_visita" class="button">Conferir Armações</button>
-    </section>
-
-    <section id="promocao" class="plans">
-        <h2 class="title--big">Seu CR Vale +</h2>
-        <h3 class="title-small plans__list__item__title"><strong class="shows__list__enfase">UNIVERSITÁRIOS</strong> Tem <br> Descontos Exclusivos!</h3>
-        <p class="text description_plan">
-            Use seu Coeficiênte de Rendimento (CR) para obter descontos exclusivos para universitários.
-            Agora seu rendimento acadêmico vale SAÚDE, CONFORTE E ESTILO !
-        </p>
-        <ul class="plans__list">
-            <li class="plans__list__item">
-                
-                <img class="plans__list__item__olhos" src="/src/images/olhos01.png" alt="logo-plano">
-                <strong class="title--small"> Acima de 8.7</strong>
-                
-                <ul>
-                    <li class="plans__list__item__beneficios">
-                        <i class="bi bi-heart-pulse-fill"></i>
-                        <p class="text">
-                            CONSULTA oftalmologica Gratuita
-                        </p>
-                    </li>
-                    <li class="plans__list__item__beneficios">
-                        <i class="bi bi-eyeglasses"></i>
-                        <p class="text">
-                            ARMAÇÃO Gratuita
-                        </p>
-                    </li>
-                    <li class="plans__list__item__beneficios">
-                        <i class="bi bi-piggy-bank-fill"></i>
-                        <p class="text">
-                            10% de DESCONTO
-                        </p>
-                    </li>
-                    <li class="plans__list__item__beneficios">
-                        <i class="bi bi-piggy-bank"></i>
-                        <p class="text">
-                            15% de DESCONTO para um familiar
-                        </p>
-                    </li>
-                    <li class="plans__list__item__beneficios">
-                        <i class="bi bi-gift-fill"></i>
-
-                        <p class="text">
-                            Presentinho VERSA
-                        </p>
-                    </li>
-                </ul>
-                <button id="buttonCRalto" class="button">Sou Eu</button>
-            </li>
-            <li class="plans__list__item">
-                <img class="plans__list__item__olhos" src="/src/images/olhos02.png" alt="logo-plano">
-                <strong class="title--small">Entre 7.7 & 8.7</strong>
-
-                <ul>
-                    <li class="plans__list__item__beneficios">
-                        <i class="bi bi-heart-pulse-fill"></i>
-                        <p class="text">
-                            CONSULTA oftalmologica Gratuita
-                        </p>
-                    </li>
-                    <li class="plans__list__item__beneficios">
-                        <i class="bi bi-eyeglasses"></i>
-                        <p class="text">
-                            ARMAÇÃO Gratuita
-                        </p>
-                    </li>
-                    <li class="plans__list__item__beneficios">
-                        <i class="bi bi-piggy-bank-fill"></i>
-                        <p class="text">
-                            5% de DESCONTO
-                        </p>
-                    </li>
-                    <li class="plans__list__item__beneficios">
-                        <i class="bi bi-piggy-bank"></i>
-                        <p class="text">
-                            10% de DESCONTO para um familiar
-                        </p>
-                    </li>
-                    <li class="plans__list__item__beneficios">
-                        <i class="bi bi-gift-fill"></i>
-
-                        <p class="text">
-                            Presentinho VERSA
-                        </p>
-                    </li>
-                </ul>
-                <button id="buttonCRmedio" class="button">Sou Eu</button>
-            </li>
-            <li class="plans__list__itemspace">
-                <img class="plans__list__item__olhos" src="/src/images/olhos03.png" alt="logo-plano">
-                <strong class="title--small">Entre 6.7 & 7.7</strong>
-               
-                <ul>
-                    <li class="plans__list__item__beneficios">
-                        <i class="bi bi-heart-pulse-fill"></i>
-                        <p class="text">
-                            CONSULTA oftalmologica Gratuita
-                        </p>
-                    </li>
-                    <li class="plans__list__item__beneficios">
-                        <i class="bi bi-piggy-bank-fill"></i>
-                        <p class="text">
-                            5% de DESCONTO
-                        </p>
-                    </li>
-                    <li class="plans__list__item__beneficios">
-                        <i class="bi bi-piggy-bank"></i>
-                        <p class="text">
-                            10% de DESCONTO para um familiar
-                        </p>
-                    </li>
-                    
-                </ul>
-                <div class="buttonspace">
-                    <button id="buttonCRbaixo" class="button">Sou Eu</button>
-                </div>
-                <p class="text--small aviso">
-                    * o cr deve corresponder ao semestre vigente, sendo apresentado junto à matrícula da universidade.
-                </p>
-            </li>
-        </ul>
-    </section>
-    <section id="historia" class="history">
-        <!--<img src="https://via.placeholder.com/500x400" alt="imagem">-->
-        <div class="history__text_container">
-            <h2 class="title">História</h2>
-            <p class="text--big">
-                A empresa começa com a iniciativa filantrópica Projeto Social Pró-Visão, fundada pelo pastor e empresário Carlos Henrique Campos, primeiramente limitada apenas à capital São Luís do Maranhão. 
-                <br><br>Com o advento da Pandemia de Covid-19 e o lockdown em todo o país, as ações do projeto social se voltaram para as comunidades mais carentes, expandindo-se e passando à alcançar todos os municípios vizinhos. 
-                <br><br>Hoje, a iniciativa continua patrocinada e gerida pela Óticas Versa, alcançando todo o Estado do Maranhão, levando consigo uma equipe de profissionais de saúde ainda mais equipada.
-            </p>
         </div>
     </section>
 
@@ -493,6 +494,23 @@
             <p class="text--small">
                 CNPJ - 381.867.690.001.19
             </p>
+            <ul class="footer__container__universidades">
+                <li class="footer__container__universidades__item">
+                    <img src="/src/images/ufma-hero.webp">
+                </li>
+                <li class="footer__container__universidades__item">
+                    <img src="/src/images/ceuma-hero.png">
+                </li>
+                <li class="footer__container__universidades__item">
+                    <img src="/src/images/uema-hero.png">
+                </li>
+                <li class="footer__container__universidades__item">
+                    <img src="/src/images/pitagoras-hero.jpg">
+                </li>
+                <li class="footer__container__universidades__item">
+                    <img src="/src/images/ifma-hero.jpg">
+                </li>
+            </ul>
         </div>
     </footer>
 

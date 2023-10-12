@@ -82,6 +82,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding-top: 100px;
     padding: 5.6vw;
     align-items: center;
 
@@ -209,6 +210,9 @@ body{
 
 
 .equipe{
+    h2{
+        text-align: center;
+    }
     &__item{
         position: relative;
         &::before{
