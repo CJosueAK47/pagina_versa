@@ -191,7 +191,7 @@ body{
 }
 .navbar-brand{
     font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, seri;
 }
 #cabecalho .nav .nav-link i{
     padding-right: 12px;
@@ -213,6 +213,9 @@ body{
 .equipe{
     h2{
         text-align: center;
+    }
+    h3{
+        font-family: 'Pixelify Sans', sans-serif;
     }
     &__item{
         position: relative;

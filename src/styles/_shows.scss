@@ -1,7 +1,8 @@
 @use 'variaveis';
 
 .shows{
-    padding: 3vw 5.6vw;
+    font-family: sans-serif;
+    padding: 3vw 5.6vw 0vw 3vw;
     min-height: 50vw;
 
 
@@ -23,8 +24,7 @@
             img{
                 max-width: 100%;
                 border-radius: 4px;
-                height: 400px;
-                width: 400px;
+                height: 250px;
             }
             padding-bottom: 20px;
 
@@ -34,6 +34,7 @@
                 margin: 0 auto;
                 text-align: justify;
                 padding-bottom: 20px;
+                font-weight: bold;
             }
         }
 
