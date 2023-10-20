@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function(){
             botao2.target.classList.add('active');
         })
     }
+    
 })
 
 function removeSectionAtiva(){
@@ -133,3 +134,4 @@ buttonCRbaixo.addEventListener("click", function() {
     // Redireciona o usuário para o link do WhatsApp
     window.location.href = linkWhatsApp;
 });
+
