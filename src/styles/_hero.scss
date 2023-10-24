@@ -28,17 +28,6 @@
         &title--small{
             margin-bottom: 20px;
         }
-    
-        &__combos{
-            display: flex;
-            justify-content: space-between;
-
-            &__combo{
-                width: calc(50% - 12px);
-                display: block;
-                list-style: none;
-            }
-        }
     }
     &::before{
         position: absolute;
@@ -63,6 +52,7 @@
                 font-size: 3rem; // Ajustar o tamanho da fonte para telas menores
                 text-shadow: 2px 2px 4px rgb(0, 0, 0.9);
                 font-family: sans-serif;
+                color: rgb(188, 66, 52);
             }
     
             &__branding__h3{
