@@ -78,7 +78,7 @@ body{
 
 .diferencial{
     margin-top: 44px;
-    background-image: url(https://th.bing.com/th/id/OIG3.xyR4Ik88bfjIArYcmdUy?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn);
+    background-image: url(/src/images/ruiva_7.jpeg);
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,7 +99,7 @@ body{
     }
 
     &__text_container{
-        background-color: rgba(0, 0, 0, 0.627);
+        background-color: rgba(0, 0, 0, 0.7);
         padding: 0 2vw;
 
         &__list{
@@ -197,7 +197,7 @@ body{
     padding-right: 12px;
 }
 #cabecalho .nav .nav-link.active{
-    background-color: #001bb2;
+    background-color: #005F70;
     color: white;
 }
 
