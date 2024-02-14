@@ -24,7 +24,7 @@
             img{
                 max-width: 100%;
                 border-radius: 4px;
-                height: 250px;
+                height: 350px;
             }
             padding-bottom: 20px;
 
@@ -39,7 +39,7 @@
         }
 
         &__enfase{
-            color: rgb(188, 66, 52);
+            color: #0073BB;
         }
 
         p{
@@ -67,8 +67,8 @@
             border-bottom: 5px solid transparent;
 
             &--is-active{
-            
-                border-color: rgb(188, 66, 52);;
+
+                border-color: #0073BB;
             }
         }
     }

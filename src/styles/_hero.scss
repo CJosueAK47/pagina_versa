@@ -3,7 +3,7 @@
 .hero{
     padding-top: 5.6vw;
     min-height: 90vh;
-    background-image: url(/src/images/ruiva_7.jpeg);
+    background-image: url(/src/images/negra.jpeg);
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +22,7 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
             font-size: 1rem;
         }
-        
+
 
 
         &title--small{
@@ -40,9 +40,9 @@
         opacity: 0.4;
     }
 
-       
+
     @media screen and (max-width: 768px) {
-        background-image: url(/src/images/ruiva_7.jpeg);
+        background-image: url(/src/images/negra.jpeg);
 
         padding-top: 70vw; // Aumentar o preenchimento para telas menores
 
@@ -54,7 +54,7 @@
                 font-family: sans-serif;
                 color: rgb(188, 66, 52);
             }
-    
+
             &__branding__h3{
                 font-size: 1rem;
                 text-shadow: 2px 2px 4px rgb(0, 0, 0.9);
